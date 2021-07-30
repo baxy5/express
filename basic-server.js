@@ -6,7 +6,7 @@ const PORT = process.env.PORT || "5000";
 app.use(express.static("public"));
 
 app.get("/index.html", (req, res, next) => {
-  res.send("index.html");
+  res.send("public/index.html");
 });
 
 app.listen(PORT, () => {
